@@ -1,0 +1,2 @@
+D:\C# Workspace\TwentyFortyEight\TwentyFortyEight\bin\Debug\TwentyFortyEight.exe.config
+D:\CSharpWorkspace\TwentyFortyEight\TwentyFortyEight\bin\Debug\TwentyFortyEight.exe.config
