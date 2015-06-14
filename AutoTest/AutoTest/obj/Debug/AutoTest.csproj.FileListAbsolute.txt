@@ -12,3 +12,6 @@ D:\EscapeFloor\AutoTest\AutoTest\bin\Debug\WebDriver.Support.xml
 D:\EscapeFloor\AutoTest\AutoTest\obj\Debug\AutoTest.exe
 D:\EscapeFloor\AutoTest\AutoTest\obj\Debug\AutoTest.pdb
 D:\EscapeFloor\AutoTest\AutoTest\obj\Debug\AutoTest.csprojResolveAssemblyReference.cache
+D:\CSharpWorkspace\CSharpWorkspace\AutoTest\AutoTest\bin\Debug\AutoTest.exe.config
+D:\CSharpWorkspace\CSharpWorkspace\AutoTest\AutoTest\obj\Debug\AutoTest.exe
+D:\CSharpWorkspace\CSharpWorkspace\AutoTest\AutoTest\obj\Debug\AutoTest.pdb
