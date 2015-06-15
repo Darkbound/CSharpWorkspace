@@ -1,0 +1,6 @@
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\DefineClasses\DefineClasses\bin\Debug\DefineClasses.exe.config
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\DefineClasses\DefineClasses\obj\Debug\DefineClasses.csprojResolveAssemblyReference.cache
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\DefineClasses\DefineClasses\bin\Debug\DefineClasses.exe
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\DefineClasses\DefineClasses\bin\Debug\DefineClasses.pdb
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\DefineClasses\DefineClasses\obj\Debug\DefineClasses.exe
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\DefineClasses\DefineClasses\obj\Debug\DefineClasses.pdb
