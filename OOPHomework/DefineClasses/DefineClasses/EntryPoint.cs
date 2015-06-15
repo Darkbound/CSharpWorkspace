@@ -16,10 +16,17 @@ namespace DefineClasses
         static void Main()
         {
             Hero hero = new Hero();
-            Armor armor = new Armor();
-            Weapon weapon = new Weapon(WeaponType.Dagger, ItemQuality.Epic, 10);
 
-            hero.Class = Class.Fighter;
+
+
+            hero.Class = Class.Tank;
+            hero.Strength = 10;
+            hero.Agility = 10;
+            hero.Intelligence = 10;
+
+            Console.WriteLine(hero.Strength);
+            Console.WriteLine(hero.Agility);
+            Console.WriteLine(hero.Intelligence);
         }
     }
 }
