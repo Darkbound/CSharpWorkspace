@@ -16,7 +16,6 @@ public class EntryPoint
 
     static void Main()
     {
-        //This is so cool! YEAH IT IS!
         AppMenu.Initialize(); 
        
         // Actions.InitializeDriver();
