@@ -2,25 +2,20 @@
 /// intelligence, primaryAttribute (as an enumeration, one of the previous 3), isBlocking, isDead, class (Sorcerer, Fighter, Tank), 
 namespace DefineClasses
 {
-    public enum PrimaryAttribute
-	{
-        Strength,
-        Agility,
-        Intelligence
-	}
-
-    public enum Class
-    {
-        Fighter,
-        Tank,
-        Sorcerer
-    }
-    
+    using DefineClasses.Enums;
+    using System.Collections.Generic;
+        
     public class Hero
     {
         private const int PRIMARY_ATTRIBUTE_MULTIPLIER = 2;
+        
+        public Weapon Weapon { get; set; }
 
-        public PrimaryAttribute PrimaryAttribute {get; private set;}
+        public Armor Chest { get; set; }
+
+        public Armor Armor { get; set; }
+
+        public PrimaryAttribute PrimaryAttribute { get; set; }
         
         private Class heroClass;
         public Class Class
@@ -32,7 +27,6 @@ namespace DefineClasses
             set
             {
                 heroClass = value;
-                SetDefaultClassSettings();
             }
         }
 
@@ -99,7 +93,7 @@ namespace DefineClasses
             {
                 if (PrimaryAttribute == PrimaryAttribute.Intelligence)
                 {
-                    intelligence = value * PRIMARY_ATTRIBUTE_MULTIPLIER;
+                    intelligence = (value) * PRIMARY_ATTRIBUTE_MULTIPLIER;
                 }
                 else
                 {
@@ -108,41 +102,20 @@ namespace DefineClasses
             }
         }
 
-        public bool IsDead { get; private set; }
+        public bool IsDead { get; set; }
 
-        public bool IsBlocking { get; private set; }
+        public bool IsBlocking { get; set; }
 
-        public bool IsDodging { get; private set; }
+        public bool IsDodging { get; set; }
 
-        private void SetDefaultClassSettings()
+        public static void UpdateStats(Hero hero, Weapon weapon)
         {
-            if (Class == Class.Tank)
-            {
-                PrimaryAttribute = PrimaryAttribute.Strength;
-                Rage = 100;
-                IsBlocking = true;
-                IsDodging = true;
-            }
-            else if (Class == Class.Fighter)
-            {
-                PrimaryAttribute = PrimaryAttribute.Agility;
-                Energy = 100;
-                IsBlocking = false;
-                IsDodging = true;
-            }
-            else if (Class == Class.Sorcerer)
-            {
-                PrimaryAttribute = PrimaryAttribute.Intelligence;
-                Mana = 100;
-                IsBlocking = false;
-                IsDodging = false;
-            }
+            hero.Intelligence = hero.Intelligence + weapon.Intelligence;
+        }
 
-            Health = 100;
-            Strength = 10;
-            Agility = 10;
-            Intelligence = 10;
-            IsDead = false;
+        public static void UpdateStats(Hero hero, Armor armor)
+        {
+
         }
     }
 }

@@ -1,13 +1,6 @@
 ﻿namespace DefineClasses
 {
-    public enum ItemQuality
-    {
-        Common,
-        Uncommon,
-        Rare,
-        Epic,
-        Legendary
-    }
+    using DefineClasses.Enums;
 
     public abstract class Items
     {

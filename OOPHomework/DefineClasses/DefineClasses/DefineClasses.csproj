@@ -42,16 +42,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Armor.cs" />
+    <Compile Include="Armors\Shoulders.cs" />
+    <Compile Include="Armors\Wrists.cs" />
+    <Compile Include="Armors\Belt.cs" />
+    <Compile Include="Armors\Hands.cs" />
+    <Compile Include="Armors\Feet.cs" />
+    <Compile Include="Armors\Legs.cs" />
+    <Compile Include="Armors\Chest.cs" />
+    <Compile Include="Armors\Head.cs" />
+    <Compile Include="CharacterClass\Fighter.cs" />
+    <Compile Include="CharacterClass\Sorcerer.cs" />
+    <Compile Include="CharacterClass\Tank.cs" />
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="Enums\ArmorType.cs" />
+    <Compile Include="Enums\CharacterClass.cs" />
+    <Compile Include="Enums\ItemQuality.cs" />
+    <Compile Include="Enums\PrimaryAttribute.cs" />
+    <Compile Include="Enums\WeaponType.cs" />
     <Compile Include="Hero.cs" />
-    <Compile Include="Initialize.cs" />
+    <Compile Include="CharacterClass\Initialize.cs" />
+    <Compile Include="Interfaces\IHero.cs" />
+    <Compile Include="Interfaces\IWeapon.cs" />
     <Compile Include="Items.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Weapon.cs" />
+    <Compile Include="Weapons\Staff.cs" />
+    <Compile Include="Weapons\Polearm.cs" />
+    <Compile Include="Weapons\Hammer.cs" />
+    <Compile Include="Weapons\Dagger.cs" />
+    <Compile Include="Weapons\Sword.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
