@@ -5,7 +5,7 @@
 
     public class Staff
     {
-        public static Weapon Initialize()
+        public static Weapon Add()
         {
             Weapon staff = new Weapon();
 

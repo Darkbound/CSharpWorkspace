@@ -6,7 +6,6 @@
         {
             Armor head = new Armor();
 
-
             return head;
         }
     }

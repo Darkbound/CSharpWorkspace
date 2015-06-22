@@ -60,7 +60,6 @@
     <Compile Include="Enums\PrimaryAttribute.cs" />
     <Compile Include="Enums\WeaponType.cs" />
     <Compile Include="Hero.cs" />
-    <Compile Include="CharacterClass\Initialize.cs" />
     <Compile Include="Interfaces\IHero.cs" />
     <Compile Include="Interfaces\IWeapon.cs" />
     <Compile Include="Items.cs" />

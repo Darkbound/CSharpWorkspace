@@ -8,10 +8,8 @@ namespace DefineClasses
     public class Hero
     {
         private const int PRIMARY_ATTRIBUTE_MULTIPLIER = 2;
-        
-        public Weapon Weapon { get; set; }
 
-        public Armor Chest { get; set; }
+        public Weapon Weapon { get; set; }
 
         public Armor Armor { get; set; }
 
@@ -107,11 +105,6 @@ namespace DefineClasses
         public bool IsBlocking { get; set; }
 
         public bool IsDodging { get; set; }
-
-        public static void UpdateStats(Hero hero, Weapon weapon)
-        {
-            hero.Intelligence = hero.Intelligence + weapon.Intelligence;
-        }
 
         public static void UpdateStats(Hero hero, Armor armor)
         {
