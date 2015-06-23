@@ -2,6 +2,7 @@
 /// intelligence, primaryAttribute (as an enumeration, one of the previous 3), isBlocking, isDead, class (Sorcerer, Fighter, Tank), 
 namespace DefineClasses
 {
+    using DefineClasses.Armors;
     using DefineClasses.Enums;
     using System.Collections.Generic;
         
@@ -11,7 +12,16 @@ namespace DefineClasses
 
         public Weapon Weapon { get; set; }
 
-        public Armor Armor { get; set; }
+        public Armor Head { get; set; }
+        public Armor Shoulders { get; set; }
+        public Armor Chest { get; set; }
+        public Armor Wrists { get; set; }
+        public Armor Hands { get; set; }
+        public Armor Belt { get; set; }
+        public Armor Legs { get; set; }
+        public Armor Feet { get; set; }
+
+
 
         public PrimaryAttribute PrimaryAttribute { get; set; }
         
