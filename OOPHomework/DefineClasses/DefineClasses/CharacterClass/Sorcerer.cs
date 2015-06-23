@@ -14,7 +14,6 @@
         private const int DEFAULT_SORCERER_HEALTH = 10;
         private const int DEFAULT_SORCERER_MANA = 10;
 
-
         public static Hero Initialize()
         {
             Hero sorcerer = new Hero();
@@ -39,9 +38,6 @@
             sorcerer.Belt = Belt.Initialize();
             sorcerer.Legs = Legs.Initialize();
             sorcerer.Feet = Feet.Initialize();
-
-
-
 
             return sorcerer;
         }
