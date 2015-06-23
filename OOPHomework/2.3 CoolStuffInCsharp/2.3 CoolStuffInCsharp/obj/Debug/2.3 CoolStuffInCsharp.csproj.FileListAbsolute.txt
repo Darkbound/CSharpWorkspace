@@ -1,0 +1,6 @@
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\2.3 CoolStuffInCsharp\2.3 CoolStuffInCsharp\bin\Debug\2.3 CoolStuffInCsharp.exe.config
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\2.3 CoolStuffInCsharp\2.3 CoolStuffInCsharp\bin\Debug\2.3 CoolStuffInCsharp.exe
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\2.3 CoolStuffInCsharp\2.3 CoolStuffInCsharp\bin\Debug\2.3 CoolStuffInCsharp.pdb
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\2.3 CoolStuffInCsharp\2.3 CoolStuffInCsharp\obj\Debug\2.3 CoolStuffInCsharp.csprojResolveAssemblyReference.cache
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\2.3 CoolStuffInCsharp\2.3 CoolStuffInCsharp\obj\Debug\2.3 CoolStuffInCsharp.exe
+D:\CSharpWorkspace\CSharpWorkspace\OOPHomework\2.3 CoolStuffInCsharp\2.3 CoolStuffInCsharp\obj\Debug\2.3 CoolStuffInCsharp.pdb
