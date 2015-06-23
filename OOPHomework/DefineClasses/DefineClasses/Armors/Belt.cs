@@ -6,6 +6,7 @@
         {
             Armor belt = new Armor();
 
+            belt.Intelligence = 10;
 
             return belt;
         }

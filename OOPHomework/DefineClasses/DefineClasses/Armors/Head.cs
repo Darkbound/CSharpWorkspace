@@ -6,6 +6,8 @@
         {
             Armor head = new Armor();
 
+            head.Intelligence = 10;
+
             return head;
         }
     }

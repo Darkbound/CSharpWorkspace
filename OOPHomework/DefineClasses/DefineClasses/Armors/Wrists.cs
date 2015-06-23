@@ -6,6 +6,7 @@
         {
             Armor wrists = new Armor();
 
+            wrists.Intelligence = 10;
 
             return wrists;
         }

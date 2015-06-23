@@ -6,6 +6,7 @@
         {
             Armor feet = new Armor();
 
+            feet.Intelligence = 10;
 
             return feet;
         }

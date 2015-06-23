@@ -6,6 +6,7 @@
         {
             Armor chest = new Armor();
 
+            chest.Intelligence = 10;
 
             return chest;
         }

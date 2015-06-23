@@ -10,22 +10,130 @@ namespace DefineClasses
     {
         private const int PRIMARY_ATTRIBUTE_MULTIPLIER = 2;
 
-        public Weapon Weapon { get; set; }
+        private int strength;
+        private int agility;
+        private int intelligence;
+        private Class heroClass;
+        private Weapon weapon;
+        private Armor head;
+        private Armor shoulders;
+        private Armor chest;
+        private Armor wrists;
+        private Armor hands;
+        private Armor belt;
+        private Armor legs;
+        private Armor feet;
 
-        public Armor Head { get; set; }
-        public Armor Shoulders { get; set; }
-        public Armor Chest { get; set; }
-        public Armor Wrists { get; set; }
-        public Armor Hands { get; set; }
-        public Armor Belt { get; set; }
-        public Armor Legs { get; set; }
-        public Armor Feet { get; set; }
-
-
+        public Weapon Weapon 
+        {
+            get
+            {
+                return weapon;
+            }
+            set
+            {
+                weapon = value;
+                UpdateStatsOnItemAdd(weapon);
+            }
+        }
+        public Armor Head 
+        { 
+            get
+            {
+                return head;
+            }
+            set
+            {
+                head = value;
+                UpdateStatsOnItemAdd(head);
+            }
+        }
+        public Armor Shoulders
+        {
+            get
+            {
+                return shoulders;
+            }
+            set
+            {
+                shoulders = value;
+                UpdateStatsOnItemAdd(shoulders);
+            }
+        }
+        public Armor Chest
+        {
+            get
+            {
+                return chest;
+            }
+            set
+            {
+                chest = value;
+                UpdateStatsOnItemAdd(chest);
+            }
+        }
+        public Armor Wrists
+        {
+            get
+            {
+                return wrists;
+            }
+            set
+            {
+                wrists = value;
+                UpdateStatsOnItemAdd(wrists);
+            }
+        }
+        public Armor Hands
+        {
+            get
+            {
+                return hands;
+            }
+            set
+            {
+                hands = value;
+                UpdateStatsOnItemAdd(hands);
+            }
+        }
+        public Armor Belt
+        {
+            get
+            {
+                return belt;
+            }
+            set
+            {
+                belt = value;
+                UpdateStatsOnItemAdd(belt);
+            }
+        }
+        public Armor Legs
+        {
+            get
+            {
+                return legs;
+            }
+            set
+            {
+                legs = value;
+                UpdateStatsOnItemAdd(legs);
+            }
+        }
+        public Armor Feet
+        {
+            get
+            {
+                return feet;
+            }
+            set
+            {
+                feet = value;
+                UpdateStatsOnItemAdd(feet);
+            }
+        }
 
         public PrimaryAttribute PrimaryAttribute { get; set; }
-        
-        private Class heroClass;
         public Class Class
         {
             get
@@ -37,20 +145,12 @@ namespace DefineClasses
                 heroClass = value;
             }
         }
-
         public string Name { get; set; }
-
         public int Health { get; set; }
-
         public int Level { get; set; }
-
         public int Mana { get; set; }
-
         public int Energy { get; set; }
-
         public int Rage { get; set; }
-
-        private int strength;
         public int Strength
         {
             get
@@ -61,7 +161,7 @@ namespace DefineClasses
             {
                 if (PrimaryAttribute == PrimaryAttribute.Strength)
                 {
-                    strength = value * PRIMARY_ATTRIBUTE_MULTIPLIER;
+                    strength = (strength + value) * PRIMARY_ATTRIBUTE_MULTIPLIER; 
                 }
                 else
                 {
@@ -69,8 +169,6 @@ namespace DefineClasses
                 }
             }
         }
-
-        private int agility;
         public int Agility
         {
             get
@@ -81,7 +179,7 @@ namespace DefineClasses
             {
                 if (PrimaryAttribute == PrimaryAttribute.Agility)
                 {
-                    agility = value * PRIMARY_ATTRIBUTE_MULTIPLIER;
+                    agility = (agility + value) * PRIMARY_ATTRIBUTE_MULTIPLIER;
                 }
                 else
                 {
@@ -89,8 +187,6 @@ namespace DefineClasses
                 }
             }
         }       
-        
-        private int intelligence;
         public int Intelligence
         {
             get
@@ -109,16 +205,33 @@ namespace DefineClasses
                 }
             }
         }
-
         public bool IsDead { get; set; }
-
         public bool IsBlocking { get; set; }
-
         public bool IsDodging { get; set; }
 
-        public static void UpdateStats(Hero hero, Armor armor)
-        {
 
+
+        //possible to do it with events?
+        public void UpdateStatsOnItemAdd(Armor armor)
+        {
+            Intelligence = (Intelligence / 2) + armor.Intelligence;
+        }
+
+        public void UpdateStatsOnItemAdd(Weapon weapon)
+        {
+            Intelligence = (Intelligence / 2) + weapon.Intelligence;
+        }
+
+        //need to check the primary attribute
+
+        public void UpdateStatsOnItemRemove(Armor armor)
+        {
+            Intelligence = Intelligence + armor.Intelligence;
+        }
+
+        public void UpdateStatsOnItemRemove(Weapon weapon)
+        {
+            Intelligence = Intelligence + weapon.Intelligence;
         }
     }
 }

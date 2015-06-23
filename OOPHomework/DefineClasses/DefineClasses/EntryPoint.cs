@@ -11,15 +11,9 @@
         static void Main()
         {
             Hero pesho = Sorcerer.Initialize();
-
-            System.Console.WriteLine(pesho.Class);
-            System.Console.WriteLine(pesho.Strength);
-            System.Console.WriteLine(pesho.Agility);
+            
             System.Console.WriteLine(pesho.Intelligence);
             System.Console.WriteLine(pesho.Weapon.Type);
-            System.Console.WriteLine(pesho.Weapon.Intelligence);
-
-            System.Console.WriteLine(pesho.Intelligence);
        }
     }
 }
