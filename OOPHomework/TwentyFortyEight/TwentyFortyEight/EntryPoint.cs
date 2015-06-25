@@ -24,6 +24,7 @@
 
             while (true)
             {
+
                 ConsoleKeyInfo pressedKey = Console.ReadKey(true);
                 while (Console.KeyAvailable) Console.ReadKey(true);
 
@@ -43,20 +44,91 @@
                         break;
                     case ConsoleKey.LeftArrow:
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         for (int i = field.GetLength(1) - 1; i >= 0; i--)
                         {
                             for (int j = field.GetLength(0) - 1; j > 0; j--)
                             {
-                                field[i, j - 1] = field[i, j - 1] + field[i, j];
-                                field[i, j] = 0;
+
+                                if (field[i, j - 1] == 0)
+                                {
+                                    field[i, j - 1] = field[i, j];
+                                    field[i, j] = 0;
+                                }
+                                else if (field[i, j - 1] == field[i, j])
+                                {
+                                    field[i, j - 1] = field[i, j] * 2;
+                                    field[i, j] = 0;
+                                    for (int z = j - 1; z > 0; z--)
+                                    {
+                                        if (field[i, z - 1] == 0)
+                                        {
+                                            field[i, z - 1] = field[i, z];
+                                            field[i, z] = 0;
+                                        }
+                                    }
+
+                                }
+
                             }
                         }
+
+
+
+
+
+
 
                         UpdateAvailableCoordinates(field, coordinates, takenCoords);
 
                         GenerateNewNumberOnField(rng, field, coordinates, takenCoords);
 
                         DrawField(field);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         break;
                     case ConsoleKey.RightArrow:
