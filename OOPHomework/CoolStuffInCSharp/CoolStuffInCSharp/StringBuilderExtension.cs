@@ -27,7 +27,7 @@
                 Console.Write("startIndex is greater than the length of the string" +
                     "\n{0}", e);
             }
-            
+
             return substring;
         }
 
@@ -39,14 +39,14 @@
             {
                 for (int i = startIndex; i < startIndex + length; i++)
                 {
-                        substring.Append(sb[i]);
+                    substring.Append(sb[i]);
                 }
                 return substring;
             }
             catch (IndexOutOfRangeException e)
             {
-                Console.Write("startIndex is either greater than the length of the string" + 
-                    "\nor startIndex+length don't reffer to an element within the bounds of the string" + 
+                Console.Write("startIndex is either greater than the length of the string" +
+                    "\nor startIndex+length don't reffer to an element within the bounds of the string" +
                     "\n{0}", e);
             }
 
