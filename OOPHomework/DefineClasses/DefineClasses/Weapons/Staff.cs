@@ -5,7 +5,7 @@
 
     public class Staff
     {
-        public static Weapon Add()
+        public static Weapon Add(Hero hero)
         {
             Weapon staff = new Weapon();
 

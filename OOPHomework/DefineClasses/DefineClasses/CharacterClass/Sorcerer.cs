@@ -29,7 +29,7 @@
             sorcerer.IsBlocking = false;
             sorcerer.IsDodging = false;
 
-            sorcerer.Weapon = Staff.Add();
+            sorcerer.Weapon = Staff.Add(sorcerer);
             sorcerer.Head = Head.Initialize();
             sorcerer.Shoulders = Shoulders.Initialize();
             sorcerer.Chest = Chest.Initialize();
