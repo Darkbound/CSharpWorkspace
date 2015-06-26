@@ -31,7 +31,6 @@ public class MyList<T>
             {
                 throw new IndexOutOfRangeException("Index out of range.");
             }
-
         }
 
         set
