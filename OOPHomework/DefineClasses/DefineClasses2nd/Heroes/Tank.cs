@@ -13,7 +13,7 @@
         }
 
         public Tank(string name, int health, int mana, int level, int strength, int agility, int intellect, int damage, int damageBlock, bool isDead, bool isBlocking, Weapon weapon, Helm helm, Chest chest, Hands hands, Legs legs, Feet feet)
-            : base(name, Class.Fighter, health, mana, level, strength, agility, intellect, damage, damageBlock, isDead, isBlocking, weapon, helm, chest, hands, legs, feet)
+            : base(name, Class.Tank, health, mana, level, strength, agility, intellect, damage, damageBlock, isDead, isBlocking, weapon, helm, chest, hands, legs, feet)
         {
 
         }

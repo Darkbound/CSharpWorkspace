@@ -7,29 +7,29 @@
         private const ItemQuality DEFAULT_ARMOR_QUALITY = ItemQuality.Uncommon;
 
         // Helm defaults
-        private const int DEFAULT_TANK_HELM_DAMAGEBLOCK = 5;
+        private const int DEFAULT_TANK_HELM_DAMAGEBLOCK = 8;
         private const int DEFAULT_FIGHTER_HELM_DAMAGEBLOCK = 5;
-        private const int DEFAULT_SORCERER_HELM_DAMAGEBLOCK = 5;
+        private const int DEFAULT_SORCERER_HELM_DAMAGEBLOCK = 3;
 
         // Chest defaults
-        private const int DEFAULT_TANK_CHEST_DAMAGEBLOCK = 5;
-        private const int DEFAULT_FIGHTER_CHEST_DAMAGEBLOCK = 5;
+        private const int DEFAULT_TANK_CHEST_DAMAGEBLOCK = 10;
+        private const int DEFAULT_FIGHTER_CHEST_DAMAGEBLOCK = 7;
         private const int DEFAULT_SORCERER_CHEST_DAMAGEBLOCK = 5;
                                   
         // Hands defaults         
         private const int DEFAULT_TANK_HANDS_DAMAGEBLOCK = 5;
-        private const int DEFAULT_FIGHTER_HANDS_DAMAGEBLOCK = 5;
-        private const int DEFAULT_SORCERER_HANDS_DAMAGEBLOCK = 5;
+        private const int DEFAULT_FIGHTER_HANDS_DAMAGEBLOCK = 4;
+        private const int DEFAULT_SORCERER_HANDS_DAMAGEBLOCK = 3;
                                   
         // Legs defaults          
-        private const int DEFAULT_TANK_LEGS_DAMAGEBLOCK = 5;
-        private const int DEFAULT_FIGHTER_LEGS_DAMAGEBLOCK = 5;
+        private const int DEFAULT_TANK_LEGS_DAMAGEBLOCK = 10;
+        private const int DEFAULT_FIGHTER_LEGS_DAMAGEBLOCK = 7;
         private const int DEFAULT_SORCERER_LEGS_DAMAGEBLOCK = 5;
                                    
         // Feet defaults           
-        private const int DEFAULT_TANK_FEET_DAMAGEBLOCK = 5;
-        private const int DEFAULT_FIGHTER_FEET_DAMAGEBLOCK = 5;
-        private const int DEFAULT_SORCERER_FEET_DAMAGEBLOCK = 5;
+        private const int DEFAULT_TANK_FEET_DAMAGEBLOCK = 4;
+        private const int DEFAULT_FIGHTER_FEET_DAMAGEBLOCK = 3;
+        private const int DEFAULT_SORCERER_FEET_DAMAGEBLOCK = 2;
 
         public override Helm TankHelm()
         {

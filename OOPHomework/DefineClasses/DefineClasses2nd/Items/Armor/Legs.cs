@@ -10,7 +10,7 @@
         }
 
         public Legs(int damageBlock, ItemQuality quality)
-            :base(damageBlock, quality)
+            : base(damageBlock, quality)
         {
             this.Type = ArmorType.Legs;
         }

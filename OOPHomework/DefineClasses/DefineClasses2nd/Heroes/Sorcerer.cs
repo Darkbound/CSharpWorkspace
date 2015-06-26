@@ -7,7 +7,7 @@
     public class Sorcerer : Hero
     {
         public Sorcerer(string name, int health, int mana, int level, int strength, int agility, int intellect, bool isDead, bool isBlocking)
-            :base(name, Class.Sorcerer, health, mana, level, strength, agility, intellect, isDead, isBlocking)
+            : base(name, Class.Sorcerer, health, mana, level, strength, agility, intellect, isDead, isBlocking)
         {
 
         }

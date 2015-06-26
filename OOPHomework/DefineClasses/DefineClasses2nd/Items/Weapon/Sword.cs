@@ -5,7 +5,7 @@
     public class Sword : Weapon
     {
         public Sword(int damage, ItemQuality quality)
-            :base(damage, quality)
+            : base(damage, quality)
         {
             this.Type = WeaponType.Sword;
         }

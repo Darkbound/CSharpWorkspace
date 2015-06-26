@@ -7,14 +7,13 @@
         private const ItemQuality DEFAULT_WEAPON_QUALITY = ItemQuality.Uncommon;
 
         // Sword defaults
-        private const int DEFAULT_SWORD_DAMAGE = 5;
+        private const int DEFAULT_SWORD_DAMAGE = 50;
 
         // Hammer defaults
-        private const int DEFAULT_HAMMER_DAMAGE = 5;
+        private const int DEFAULT_HAMMER_DAMAGE = 40;
 
         // Staff defaults
-        private const int DEFAULT_STAFF_DAMAGE = 5;
-
+        private const int DEFAULT_STAFF_DAMAGE = 65;
 
         public override Sword GiveSword()
         {
