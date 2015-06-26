@@ -17,12 +17,19 @@
         }
 
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
+
         public int Age { get; set; }
+
         public string FacultyNumber { get; set; }
+
         public string PhoneNumber { get; set; }
+
         public string Email { get; set; }
+
         public List<int> Marks { get; set; }
+
         public string GroupNumber { get; set; }
     }
 }

@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Lambda", "Lambda\3.Lambda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.MaxLengthString", "MaxLengthString\6.MaxLengthString.csproj", "{BA3290A2-C1EE-4EC5-9A30-4E20AF00098E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.DelegatesTimer", "DelegatesTimer\4.DelegatesTimer.csproj", "{F542CD16-F3B5-49B9-9BE8-D847060EC3B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.DelegatesTimer!", "DelegatesTimer\4.DelegatesTimer!.csproj", "{F542CD16-F3B5-49B9-9BE8-D847060EC3B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.EventsTimer", "EventsTimer\5.EventsTimer.csproj", "{71FF1704-F433-4B03-8D66-ECA55D5DCABB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.EventsTimer!", "EventsTimer\5.EventsTimer!.csproj", "{71FF1704-F433-4B03-8D66-ECA55D5DCABB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.IEnumerableExtension", "2.IEnumerableExtension\2.IEnumerableExtension.csproj", "{45AC0F88-720B-4DAD-99E6-E8465B10D9E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.IEnumerableExtension!", "2.IEnumerableExtension\2.IEnumerableExtension!.csproj", "{45AC0F88-720B-4DAD-99E6-E8465B10D9E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
