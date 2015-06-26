@@ -11,14 +11,15 @@
         {
             get
             {
-                return rows;
+                return this.rows;
             }
+
             set
             {
-                rows = value;
-                if (cols > 0)
+                this.rows = value;
+                if (this.cols > 0)
                 {
-                    this.Elements = new int[rows, cols];
+                    this.Elements = new int[this.rows, this.cols];
                 }
             }
         }
@@ -27,20 +28,20 @@
         {
             get
             {
-                return cols;
+                return this.cols;
             }
+
             set
             {
-                cols = value;
-                if (rows > 0)
+                this.cols = value;
+                if (this.rows > 0)
                 {
-                    this.Elements = new int[rows, cols];
+                    this.Elements = new int[this.rows, this.cols];
                 }
             }
         }
 
         public int[,] Elements { get; private set; }
-
 
         public static Matrix operator +(Matrix matrix1, Matrix matrix2)
         {
@@ -53,7 +54,6 @@
             matrix.Rows = matrix1.Rows;
             matrix.Cols = matrix1.Cols;
             
-
             for (int i = 0; i < matrix.Rows; i++)
             {
                 for (int j = 0; j < matrix.Cols; j++)
@@ -75,7 +75,6 @@
             Matrix matrix = new Matrix();
             matrix.Rows = matrix1.Rows;
             matrix.Cols = matrix1.Cols;
-
 
             for (int i = 0; i < matrix.Rows; i++)
             {
@@ -105,7 +104,7 @@
                 {
                     for (int z = 0; z < matrix.Rows; z++)
                     {
-                        matrix.Elements[i, j] = matrix.Elements[i, j] + matrix1.Elements[i, z] * matrix2.Elements[z, j];
+                        matrix.Elements[i, j] = matrix.Elements[i, j] + (matrix1.Elements[i, z] * matrix2.Elements[z, j]);
                     }
                 }
             }

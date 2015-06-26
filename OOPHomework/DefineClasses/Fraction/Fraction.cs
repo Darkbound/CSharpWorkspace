@@ -6,46 +6,52 @@
     {
         private string fractValue;
         private decimal deciValue;
-        private int numerator = Int32.MinValue;
-        private int denominator = Int32.MinValue;
+        private int numerator = int.MinValue;
+        private int denominator = int.MinValue;
 
         public int Numerator 
         { 
             get
             {
-                return numerator;
+                return this.numerator;
             }
+
             set
             {
-                numerator = value;
-                if (denominator != Int32.MinValue)
+                this.numerator = value;
+
+                if (this.denominator != int.MinValue)
                 {
                     this.fractValue = this.numerator.ToString() + @"/" + this.denominator.ToString();
                     this.deciValue = (decimal)this.numerator / this.denominator;
                 }
             }
         }
+
         public int Denominator
         {
             get
             {
-                return denominator;
+                return this.denominator;
             }
+
             set
             {
-                denominator = value;
-                if (numerator != Int32.MinValue)
+                this.denominator = value;
+
+                if (this.numerator != int.MinValue)
                 {
                     this.fractValue = this.numerator.ToString() + @"/" + this.denominator.ToString();
                     this.deciValue = (decimal)this.numerator / this.denominator;
                 }
             }
         }
+
         public string FractValue 
         { 
             get
             {
-                return fractValue;
+                return this.fractValue;
             }
         }
 
@@ -53,7 +59,7 @@
         {
             get
             {
-                return deciValue;
+                return this.deciValue;
             }
         }
 
@@ -69,7 +75,7 @@
             else
             {
                 fract.Denominator = fraction1.denominator * fraction2.denominator;
-                fract.Numerator = ((fract.Denominator / fraction1.denominator) * fraction1.numerator) + (fract.Denominator / fraction2.denominator) * fraction2.numerator;
+                fract.Numerator = ((fract.Denominator / fraction1.denominator) * fraction1.numerator) + ((fract.Denominator / fraction2.denominator) * fraction2.numerator);
             }
 
             return fract;

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Matrix
+﻿namespace Matrix
 {
-    class EntryPoint
+    using System;
+
+    public class EntryPoint
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Matrix matrix1 = new Matrix();
             matrix1.Cols = 5;
@@ -54,6 +50,7 @@ namespace Matrix
                 {
                     Console.Write("{0, 4}", matrix[i, j]);
                 }
+
                 Console.WriteLine();
             }
         }

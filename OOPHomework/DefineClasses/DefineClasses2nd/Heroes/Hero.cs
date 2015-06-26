@@ -195,7 +195,7 @@
 
         public void Attack(Hero hero)
         {
-            int randomNumber = EntryPoint.Rng.Next();
+            int randomNumber = EntryPoint.rng.Next();
 
             if (hero.blockedLastTurn == true)
             {

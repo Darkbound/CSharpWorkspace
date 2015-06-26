@@ -2,14 +2,13 @@
 {
     using System;
 
-    class EntryPoint
+    public class EntryPoint
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Fraction fract1 = new Fraction();
             Fraction fract2 = new Fraction();
             Fraction result = new Fraction();
-
 
             fract1.Numerator = 5;
             fract1.Denominator = 3;

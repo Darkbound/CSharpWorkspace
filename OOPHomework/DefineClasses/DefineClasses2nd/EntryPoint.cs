@@ -8,20 +8,7 @@
 
     public class EntryPoint
     {
-        private static Random rng = new Random();
-
-        public static Random Rng 
-        { 
-            get
-            {
-                return rng;
-            }
-
-            set
-            {
-                rng = value;
-            }
-        }
+        public static Random rng = new Random();
 
         public static void Main()
         {
@@ -45,9 +32,9 @@
                        
             while (!isGameOver)
             {
-                attackingHero = heroes[Rng.Next(0, heroes.Count)];
+                attackingHero = heroes[rng.Next(0, heroes.Count)];
                 heroes.Remove(attackingHero);
-                defendingHero = heroes[Rng.Next(0, heroes.Count)];
+                defendingHero = heroes[rng.Next(0, heroes.Count)];
                 attackingHero.Attack(defendingHero);
                 
                 if (defendingHero.IsDead == true)
