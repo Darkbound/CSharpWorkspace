@@ -23,9 +23,7 @@
             }
             catch (IndexOutOfRangeException e)
             {
-
-                Console.Write("startIndex is greater than the length of the string" +
-                    "\n{0}", e);
+                Console.Write("startIndex is greater than the length of the string\n{0}", e);
             }
 
             return substring;
