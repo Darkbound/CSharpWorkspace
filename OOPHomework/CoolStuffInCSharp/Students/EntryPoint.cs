@@ -23,9 +23,13 @@
             // finish this one
             var newStudents =
                 from s in students
-                where Convert.ToInt32(s.FirstName[0]) < Convert.ToInt32(s.LastName[0])
-                
+                where s.FirstName.CompareTo(s.LastName) < 0
                 select s;
+
+            foreach (var item in newStudents)
+            {
+                Console.WriteLine(item.FirstName + " " + item.LastName);
+            }
 
             var youngStudents =
                 from s in students
