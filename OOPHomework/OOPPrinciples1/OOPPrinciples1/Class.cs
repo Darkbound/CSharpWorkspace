@@ -1,7 +1,18 @@
 ﻿namespace SchoolSystem
 {
-    public class Class : School
+    using System.Collections.Generic;
+
+    public class Class
     {
-        public string TextIdentifier { get; set; }
+        public Class(string textIdentifier)
+        {
+            this.TextIdentifier = textIdentifier;
+        }
+
+        public List<Teacher> Teachers { get; set; }
+
+        public Student Student { get; set; }
+
+        public string TextIdentifier { get; private set; }
     }
 }

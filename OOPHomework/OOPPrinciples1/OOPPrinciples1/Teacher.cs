@@ -4,7 +4,23 @@
 
     public class Teacher : People
     {
-        public List<Disciplines> Disciplines { get; set; }
-        public string Name { get; set; }
+        public Teacher()
+        {
+
+        }
+
+        public Teacher(string name)
+            : this(name, new List<Disciplines> { null })
+        {
+
+        }
+
+        public Teacher(string name, List<Disciplines> disciplinesToTeach)
+        {
+            this.Name = name;
+            this.DisciplinesToTeach = disciplinesToTeach;
+        }
+
+        public List<Disciplines> DisciplinesToTeach { get; set; }
     }
 }
